@@ -9,7 +9,7 @@
         <img src="img/logo2.png" />
     </div>
     <div class="col-md-5">
-        <img src="img/header.png" />
+        <img src="" />
     </div>
     <div class="col-md-3" style="padding-top:20px">
         <ol class="list-inline">
@@ -41,7 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">首页</a>
+                <a class="navbar-brand" href="index.jsp">首页</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

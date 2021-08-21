@@ -3,11 +3,12 @@ package com.yaorange.store.orm;
 import java.io.Serializable;
 
 public class Category implements Serializable {
-    private Long SER = 25646565488l;
+    private Long serialVersionUID = 2564656548855877L;
     private String cid;
     private String cname;
 
-    public Category(String cid, String cname) {
+    public Category(Long serialVersionUID, String cid, String cname) {
+        this.serialVersionUID = serialVersionUID;
         this.cid = cid;
         this.cname = cname;
     }
@@ -31,10 +32,19 @@ public class Category implements Serializable {
         this.cname = cname;
     }
 
+    public Long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public void setSerialVersionUID(Long serialVersionUID) {
+        this.serialVersionUID = serialVersionUID;
+    }
+
     @Override
     public String toString() {
         return "Category{" +
-                "cid='" + cid + '\'' +
+                "serialVersionUID=" + serialVersionUID +
+                ", cid='" + cid + '\'' +
                 ", cname='" + cname + '\'' +
                 '}';
     }

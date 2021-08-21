@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yaorange.store.dao.ProductDao">
+    <sql id="allCols">
+       pid,
+       pname,
+       market_price,
+       shop_price,
+       pimage,
+       pdate,
+       is_hot,
+       pdesc,
+       pflag,
+       cid
+    </sql>
+    <sql id="partCols">
+        pid,pname
+    </sql>
+    <select id="findHotProductList" resultType="Product">
+        select <include refid="allCols"/> from product
+        where is_hot=1
+        order by pdate desc
+        limit 0,10
+    </select>
+</mapper>

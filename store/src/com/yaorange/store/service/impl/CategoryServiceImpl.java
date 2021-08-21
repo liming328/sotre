@@ -3,6 +3,7 @@ package com.yaorange.store.service.impl;
 import com.yaorange.store.dao.CategoryDao;
 import com.yaorange.store.orm.Category;
 import com.yaorange.store.service.CategoryService;
+import com.yaorange.store.utils.CacheUtil;
 import com.yaorange.store.utils.MybatisUtil;
 import org.apache.ibatis.session.SqlSession;
 
@@ -13,9 +14,13 @@ public class CategoryServiceImpl implements CategoryService {
     public List<Category> findAll() {
         SqlSession sqlSession = null;
         try {
-            sqlSession = MybatisUtil.getSqlSession();
-            CategoryDao categoryDao = sqlSession.getMapper(CategoryDao.class);
-            List<Category> categoryList = categoryDao.findAll();
+           List<Category> categoryList =(List<Category>) CacheUtil.get("categoryList");
+            if (null==categoryList){
+                sqlSession = MybatisUtil.getSqlSession();
+                CategoryDao categoryDao = sqlSession.getMapper(CategoryDao.class);
+                categoryList = categoryDao.findAll();
+                CacheUtil.put("categoryList",categoryList);
+            }
             return categoryList;
         } catch (Exception e) {
             e.printStackTrace();

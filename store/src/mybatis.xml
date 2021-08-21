@@ -31,5 +31,6 @@
     <mappers>
         <mapper resource="com/yaorange/store/dao/impl/UserMapper.xml"></mapper>
         <mapper resource="com/yaorange/store/dao/impl/CategoryMapper.xml"></mapper>
+        <mapper resource="com/yaorange/store/dao/impl/ProductMapper.xml"></mapper>
     </mappers>
 </configuration>
