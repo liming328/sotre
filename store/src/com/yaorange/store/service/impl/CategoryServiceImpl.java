@@ -1,7 +1,7 @@
 package com.yaorange.store.service.impl;
 
 import com.yaorange.store.dao.CategoryDao;
-import com.yaorange.store.orm.Category;
+import com.yaorange.store.entity.Category;
 import com.yaorange.store.service.CategoryService;
 import com.yaorange.store.utils.CacheUtil;
 import com.yaorange.store.utils.MybatisUtil;

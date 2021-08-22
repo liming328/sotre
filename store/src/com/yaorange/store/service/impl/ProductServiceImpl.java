@@ -1,9 +1,9 @@
 package com.yaorange.store.service.impl;
 
 import com.yaorange.store.dao.ProductDao;
-import com.yaorange.store.orm.Category;
-import com.yaorange.store.orm.Page;
-import com.yaorange.store.orm.Product;
+import com.yaorange.store.entity.Category;
+import com.yaorange.store.entity.Page;
+import com.yaorange.store.entity.Product;
 import com.yaorange.store.service.ProductService;
 import com.yaorange.store.utils.MybatisUtil;
 import org.apache.ibatis.session.SqlSession;

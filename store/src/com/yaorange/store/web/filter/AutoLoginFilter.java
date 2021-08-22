@@ -1,6 +1,6 @@
 package com.yaorange.store.web.filter;
 
-import com.yaorange.store.orm.User;
+import com.yaorange.store.entity.User;
 import com.yaorange.store.service.UserService;
 import com.yaorange.store.service.impl.UserServiceImpl;
 import com.yaorange.store.utils.CookieUtils;

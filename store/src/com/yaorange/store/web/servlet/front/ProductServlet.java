@@ -1,9 +1,9 @@
 package com.yaorange.store.web.servlet.front;
 
 import com.alibaba.fastjson.JSON;
-import com.yaorange.store.orm.Category;
-import com.yaorange.store.orm.Page;
-import com.yaorange.store.orm.Product;
+import com.yaorange.store.entity.Category;
+import com.yaorange.store.entity.Page;
+import com.yaorange.store.entity.Product;
 import com.yaorange.store.service.ProductService;
 import com.yaorange.store.service.impl.ProductServiceImpl;
 import com.yaorange.store.web.servlet.BaseServlet;
@@ -32,6 +32,7 @@ public class ProductServlet extends BaseServlet {
             e.printStackTrace();
         }
     }
+
     public String findPageByCid(HttpServletRequest request, HttpServletResponse response) throws ServletException, Exception {
 
         try {

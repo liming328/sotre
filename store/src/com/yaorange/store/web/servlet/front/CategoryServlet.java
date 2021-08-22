@@ -1,7 +1,7 @@
 package com.yaorange.store.web.servlet.front;
 
 import com.alibaba.fastjson.JSON;
-import com.yaorange.store.orm.Category;
+import com.yaorange.store.entity.Category;
 import com.yaorange.store.service.CategoryService;
 import com.yaorange.store.service.impl.CategoryServiceImpl;
 import com.yaorange.store.web.servlet.BaseServlet;

@@ -1,6 +1,6 @@
 package com.yaorange.store.service;
 
-import com.yaorange.store.orm.User;
+import com.yaorange.store.entity.User;
 
 public interface UserService {
     /**

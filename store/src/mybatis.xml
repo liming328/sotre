@@ -5,7 +5,7 @@
     <properties resource="db.properties"/>
     <!--配置工程类名的别名-->
     <typeAliases>
-        <package name="com.yaorange.store.orm"/>
+        <package name="com.yaorange.store.entity"/>
     </typeAliases>
     <environments default="dev">
         <environment id="dev">

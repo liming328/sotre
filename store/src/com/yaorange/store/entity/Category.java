@@ -1,4 +1,4 @@
-package com.yaorange.store.orm;
+package com.yaorange.store.entity;
 
 import java.io.Serializable;
 

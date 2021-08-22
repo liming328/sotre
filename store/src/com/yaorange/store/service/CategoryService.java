@@ -1,6 +1,6 @@
 package com.yaorange.store.service;
 
-import com.yaorange.store.orm.Category;
+import com.yaorange.store.entity.Category;
 
 import java.util.List;
 

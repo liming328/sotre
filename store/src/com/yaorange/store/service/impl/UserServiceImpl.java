@@ -1,7 +1,7 @@
 package com.yaorange.store.service.impl;
 
 import com.yaorange.store.dao.UserDao;
-import com.yaorange.store.orm.User;
+import com.yaorange.store.entity.User;
 import com.yaorange.store.service.UserService;
 import com.yaorange.store.utils.MailUtils;
 import com.yaorange.store.utils.MybatisUtil;
