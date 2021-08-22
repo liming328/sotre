@@ -101,11 +101,12 @@
 						for(var i = 1 ;i < json.length;i++)
 						{
                             var product = json[i];
+							// var liNode =  "<li><a href=\"productServlet?method=findPageByCid&cid=" +category.cid+"\">"+category.cname+"</a></li>";
 							var divNode = "<div class=\"col-md-2\" style=\"text-align:center;height:200px;padding:10px 0px;\">\n" +
-                                "\t\t\t\t\t\t<a href=\"product_info.jsp\">\n" +
+                                "\t\t\t\t\t\t<a href=\"productServlet?method=findByPid&pid=" +product.pid+"\">\n" +
                                 "\t\t\t\t\t\t\t<img src=\" "+product.pimage +" \" width=\"130\" height=\"130\" style=\"display: inline-block;\">\n" +
                                 "\t\t\t\t\t\t</a>\n" +
-                                "\t\t\t\t\t\t<p><a href=\"product_info.html\" style='color:#666'>" +product.pname+ "</a></p>\n" +
+                                "\t\t\t\t\t\t<p><a href=\"productServlet?method=findByPid&pid=" +product.pid+"\" style='color:#666'>" +product.pname+ "</a></p>\n" +
                                 "\t\t\t\t\t\t<p><font color=\"#E4393C\" style=\"font-size:16px\">&yen;"+ product.shop_price +"</font></p>\n" +
                                 "\t\t\t\t\t</div>";
 

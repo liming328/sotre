@@ -1,6 +1,7 @@
 package com.yaorange.store.web.servlet.front;
 
 import com.alibaba.fastjson.JSON;
+import com.yaorange.store.orm.Page;
 import com.yaorange.store.orm.Product;
 import com.yaorange.store.service.ProductService;
 import com.yaorange.store.service.impl.ProductServiceImpl;
@@ -10,7 +11,6 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
@@ -21,7 +21,6 @@ public class ProductServlet extends BaseServlet {
 
         try {
             List<Product> hotProductList = productService.findHotProductList();
-            System.out.println(hotProductList);
             String json = JSON.toJSONString(hotProductList);
             response.setContentType("text/html;charset=utf-8");
             PrintWriter out = response.getWriter();
@@ -30,6 +29,30 @@ public class ProductServlet extends BaseServlet {
             out.close();
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+    public String findPageByCid(HttpServletRequest request, HttpServletResponse response) throws ServletException, Exception {
+
+        try {
+            String cid = request.getParameter("cid");
+            String currPage = request.getParameter("currPage");
+            Page page = productService.findPageByCid(cid, currPage);
+            request.setAttribute("page",page);
+            return "product_list";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+    public String findByPid(HttpServletRequest request, HttpServletResponse response) throws ServletException, Exception {
+        try {
+            String pid = request.getParameter("pid");
+            Product product = productService.findByPid(pid);
+            request.setAttribute("product",product);
+            return "product_info";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
         }
     }
 }

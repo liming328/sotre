@@ -24,4 +24,37 @@
         order by pdate desc
         limit 0,10
     </select>
+<!--   <parameterMap id="pageMap" type="map">
+        <parameter property="cid" javaType="java.lang.String"></parameter>
+        <parameter property="beginRowIndex" javaType="java.lang.Integer"></parameter>
+        <parameter property="pageSize" javaType="java.lang.Integer"></parameter>
+    </parameterMap>
+    <select id="findPageByCid" parameterType="pageMap" resultType="Product">
+      select <include refid="allCols"/> from product
+      where cid =#{cid}
+      order by  pdate desc
+      limit #{beginRowIndex},#{pageSize}
+    </select>-->
+
+ <select id="findPageByCid" parameterType="object" resultType="Product">
+      select <include refid="allCols"/> from product
+      where cid =#{param1}
+      order by  pdate desc
+      limit #{param2},#{param3}
+    </select>
+    <select id="getTotalCount" parameterType="object" resultType="Integer">
+        select count(pid) from product
+        <where>
+            <if test="param1 !=null">
+            cid=#{param1}
+            </if>
+            <if test="param2 !=null">
+               and pflag=#{param2}
+            </if>
+        </where>
+    </select>
+    <select id="findByPid" parameterType="String" resultType="Product">
+        select <include refid="allCols"/> from product
+        where pid=#{pid}
+    </select>
 </mapper>

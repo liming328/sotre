@@ -40,10 +40,10 @@
 
 			<c:forEach items="${page.list}" var="p">
 				<div class="col-md-2">
-					<a href="productServlet?method=findById&pid=${p.pid}">
+					<a href="productServlet?method=findByPid&pid=${p.pid}">
 						<img src="${p.pimage}" width="170" height="170" style="display: inline-block;">
 					</a>
-					<p><a href="product_info.html" style='color:green'>${p.pname}</a></p>
+					<p><a href="productServlet?method=findByPid&pid=${p.pid}" style='color:green'>${p.pname}</a></p>
 					<p><font color="#FF0000">商城价：&yen;${p.shop_price}</font></p>
 				</div>
 			</c:forEach>
