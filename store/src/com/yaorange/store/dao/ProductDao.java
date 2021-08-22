@@ -1,5 +1,6 @@
 package com.yaorange.store.dao;
 
+import com.yaorange.store.orm.Category;
 import com.yaorange.store.orm.Page;
 import com.yaorange.store.orm.Product;
 
@@ -37,5 +38,12 @@ public interface ProductDao {
      * @throws Exception
      */
     public Product findByPid(String pid)throws Exception;
+
+    /**
+     * 根据cid查分类
+     * @param cid
+     * @return
+     */
+    public Category findByCid(String cid)throws Exception;
 
 }

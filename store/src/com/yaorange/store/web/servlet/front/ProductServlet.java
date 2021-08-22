@@ -1,6 +1,7 @@
 package com.yaorange.store.web.servlet.front;
 
 import com.alibaba.fastjson.JSON;
+import com.yaorange.store.orm.Category;
 import com.yaorange.store.orm.Page;
 import com.yaorange.store.orm.Product;
 import com.yaorange.store.service.ProductService;
@@ -37,7 +38,12 @@ public class ProductServlet extends BaseServlet {
             String cid = request.getParameter("cid");
             String currPage = request.getParameter("currPage");
             Page page = productService.findPageByCid(cid, currPage);
+            Category category = productService.findByCid(cid);
+
             request.setAttribute("page",page);
+            if (null!=cid&&!cid.isEmpty()){
+                request.getSession().setAttribute("category",category);
+            }
             return "product_list";
         } catch (Exception e) {
             e.printStackTrace();
@@ -54,5 +60,6 @@ public class ProductServlet extends BaseServlet {
             e.printStackTrace();
             return null;
         }
+
     }
 }

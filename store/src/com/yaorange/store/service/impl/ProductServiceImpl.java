@@ -1,6 +1,7 @@
 package com.yaorange.store.service.impl;
 
 import com.yaorange.store.dao.ProductDao;
+import com.yaorange.store.orm.Category;
 import com.yaorange.store.orm.Page;
 import com.yaorange.store.orm.Product;
 import com.yaorange.store.service.ProductService;
@@ -54,5 +55,14 @@ public class ProductServiceImpl implements ProductService {
         Product product = productDao.findByPid(pid);
         MybatisUtil.closeSqlSession(sqlSession);
         return product;
+    }
+
+    @Override
+    public Category findByCid(String cid) throws Exception {
+        SqlSession sqlSession = MybatisUtil.getSqlSession();
+        ProductDao productDao = sqlSession.getMapper(ProductDao.class);
+        Category category = productDao.findByCid(cid);
+        MybatisUtil.closeSqlSession(sqlSession);
+        return category;
     }
 }
