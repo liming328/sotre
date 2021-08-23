@@ -17,7 +17,7 @@
 			$(function () {
 				//加入购物车按钮绑定单击事件
 				$("#addCart").click(function () {
-					window.location.href = "cartServlet?method=addCart&pid=${product.pid}&count="+$("#quantity").val();
+					window.location.href = "${pageContext.request.contextPath}/cartServlet?method=addCart&pid=${product.pid}&count="+$("#quantity").val();
                 });
             })
 		</script>
