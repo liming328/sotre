@@ -1,18 +1,34 @@
 package com.yaorange.store.entity;
 
 import java.util.Date;
+import java.util.List;
 
-public class Orders {
+/**
+ * 订单
+ */
+public class Order {
     private String oid;
-    private Date ordertime;
+    private Date ordertime=new Date();
     private Double total;
-    private int state;
+    private int state;//1-已支付 0-未支付
     private String address;
     private String name;
     private String telephone;
     private String uid;
+    //对象关联 一对多
+    private List<OrderItem> orderItemList;
 
-    public Orders(String oid, Date ordertime, Double total, int state, String address, String name, String telephone, String uid) {
+    public List<OrderItem> getOrderItemList() {
+        return orderItemList;
+    }
+
+    public void setOrderItemList(List<OrderItem> orderItemList) {
+        this.orderItemList = orderItemList;
+    }
+
+
+
+    public Order(String oid, Date ordertime, Double total, int state, String address, String name, String telephone, String uid) {
         this.oid = oid;
         this.ordertime = ordertime;
         this.total = total;
@@ -23,7 +39,7 @@ public class Orders {
         this.uid = uid;
     }
 
-    public Orders() {
+    public Order() {
     }
 
     public String getOid() {
@@ -92,7 +108,7 @@ public class Orders {
 
     @Override
     public String toString() {
-        return "Orders{" +
+        return "Order{" +
                 "oid='" + oid + '\'' +
                 ", ordertime=" + ordertime +
                 ", total=" + total +

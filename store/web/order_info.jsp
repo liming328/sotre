@@ -39,7 +39,7 @@
 					<table class="table table-bordered">
 						<tbody>
 							<tr class="warning">
-								<th colspan="5">订单编号:9005 </th>
+								<th colspan="5">订单编号:待生成 </th>
 							</tr>
 							<tr class="warning">
 								<th>图片</th>
@@ -84,6 +84,7 @@
 			</div>
 			<form id="orderForm" action="orderServlet" method="post" class="form-horizontal" style="margin-top:5px;margin-left:150px;">
 				<input type="hidden" name="method" value="confirmOrder">
+				<input type="hidden" name="txtTotal" value="${total}">
 			<div>
 				<hr/>
 

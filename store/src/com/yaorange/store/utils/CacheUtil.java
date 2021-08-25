@@ -44,4 +44,9 @@ public class CacheUtil {
         return result;
 
     }
+
+    public static void closeCacheManager() {
+        System.out.println("正在关闭缓存。。。");
+        cacheManager.getInstance().shutdown();
+    }
 }
