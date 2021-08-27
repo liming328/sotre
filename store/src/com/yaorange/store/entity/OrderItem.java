@@ -8,7 +8,7 @@ public class OrderItem {
     private Integer count;
     private Double subtotal;
     private String pid;
-    private String uid;
+    private String oid;
 
     private Product product;//对一
 
@@ -44,12 +44,12 @@ public class OrderItem {
         this.pid = pid;
     }
 
-    public String getUid() {
-        return uid;
+    public String getOid() {
+        return oid;
     }
 
-    public void setUid(String uid) {
-        this.uid = uid;
+    public void setOid(String oid) {
+        this.oid = oid;
     }
 
     public Product getProduct() {
@@ -62,12 +62,12 @@ public class OrderItem {
 
     @Override
     public String toString() {
-        return "OrderItemDao{" +
+        return "OrderItem{" +
                 "itemid='" + itemid + '\'' +
                 ", count=" + count +
                 ", subtotal=" + subtotal +
                 ", pid='" + pid + '\'' +
-                ", uid='" + uid + '\'' +
+                ", oid='" + oid + '\'' +
                 ", product=" + product +
                 '}';
     }
