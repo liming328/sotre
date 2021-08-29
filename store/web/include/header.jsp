@@ -16,6 +16,7 @@
             <c:if test="${sessionScope.user != null}">
                 欢迎:${sessionScope.user.username}
                 <li><a href="userServlet?method=logout">注销</a></li>
+                <li><a href="${pageContext.request.contextPath}/orderServlet?method=myOrderList&uid=${sessionScope.user.uid}">我的订单</a></li>
             </c:if>
             <c:if test="${sessionScope.user == null}">
                 <li><a href="login.jsp">登录</a></li>

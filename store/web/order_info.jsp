@@ -30,7 +30,9 @@
 
 	<jsp:include page="include/header.jsp"/>
 
-
+     <div id="msg">
+		 ${msg}
+	 </div>
 		<div class="container">
 			<div class="row">
 

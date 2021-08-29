@@ -10,7 +10,7 @@
 <!--     pid,-->
 <!--     oid-->
 <!--    </sql>-->
-    <insert id="save" parameterType="OrderItem">
+    <insert id="save" parameterType="Orderitem">
         insert into orderitem
         values (
         #{itemid},

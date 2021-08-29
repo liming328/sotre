@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html>
@@ -31,6 +32,7 @@
 	<jsp:include page="include/header.jsp"/>
 
 		<div class="container">
+			<span class="has-error">${msg}</span>
 			<div class="row">
 
 				<div style="margin:0 auto; margin-top:10px;width:950px;">
@@ -39,7 +41,7 @@
 						<c:forEach items="${page.list}" var="order">
 						<tbody>
 							<tr class="success">
-								<th colspan="5">订单编号:${order.oid} </th>
+								<th colspan="5">订单编号:${order.oid}    总计:${order.total}    下单日期:<fmt:formatDate value="${order.ordertime}" pattern="yyyy年MM月dd日 HH:mm:ss"></fmt:formatDate> </th>
 							</tr>
 							<tr class="warning">
 								<th>图片</th>
@@ -48,7 +50,7 @@
 								<th>数量</th>
 								<th>小计</th>
 							</tr>
-							<c:forEach items="${order.orderitemList}" var="oi">
+							<c:forEach items="${order.orderItemList}" var="oi">
 							<tr class="active">
 								<td width="60" width="40%">
 									<input type="hidden" name="id" value="22">

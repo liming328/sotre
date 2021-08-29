@@ -25,6 +25,7 @@ public class AutoLoginFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response=(HttpServletResponse) servletResponse;
         request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
         //判断是否已经登录
         User user = (User) request.getSession().getAttribute("user");
         if (null == user) {

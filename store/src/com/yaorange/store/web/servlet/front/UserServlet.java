@@ -3,6 +3,7 @@ package com.yaorange.store.web.servlet.front;
 import com.yaorange.store.entity.User;
 import com.yaorange.store.service.UserService;
 import com.yaorange.store.service.impl.UserServiceImpl;
+import com.yaorange.store.utils.CookieUtils;
 import com.yaorange.store.utils.MyDateConverter;
 import com.yaorange.store.web.servlet.BaseServlet;
 import org.apache.commons.beanutils.BeanUtils;
@@ -148,5 +149,16 @@ public class UserServlet extends BaseServlet {
             request.setAttribute("msg","验证码错误");
         }
         return"login";
+    }
+    public String logout(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        request.getSession().removeAttribute("user");
+        Cookie[] cookies = request.getCookies();
+        for (Cookie cookie : cookies) {
+            if (cookie.getName().equals("autoLogin")){
+               cookie.setMaxAge(0);
+               response.addCookie(cookie);
+            }
+        }
+        return "index";
     }
 }

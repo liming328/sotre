@@ -12,7 +12,7 @@ public class Page {
 	
 	private Integer currPage;//当前页
 	private Integer totalPage;//总共多少页
-	private Integer pageSize=12;//每页显示多少条数据
+	private Integer pageSize=10;//每页显示多少条数据
 	private Integer totalCount;//总共多少条数据
 	
 	
