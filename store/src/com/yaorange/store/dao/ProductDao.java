@@ -10,7 +10,7 @@ public interface ProductDao {
      * 日期查找热门商品集合
      * @return
      */
-    public List<Product> findHotProductList();
+    public List<Product> findHotProductList()throws Exception;
 
     /**
      * 查询某类别某页的商品
@@ -19,7 +19,16 @@ public interface ProductDao {
      * @param pageSize
      * @return
      */
-    public List<Product> findPageByCid(String cid, Integer beginRowIndex, Integer pageSize);
+    public List<Product> findPageByCid(String cid, Integer beginRowIndex, Integer pageSize)throws Exception;
+
+    /**
+     * 查询所有商品的分页
+     * @param beginRowIndex
+     * @param pageSize
+     * @return
+     * @throws Exception
+     */
+    public List<Product> findPage( Integer beginRowIndex, Integer pageSize)throws Exception;
 
     /**
      * 查询某类别商品上架总数
@@ -44,5 +53,18 @@ public interface ProductDao {
      * @return
      */
     public Category findByCid(String cid)throws Exception;
+    /**
+     * 修改商品在售状态
+     * @param pid
+     * @return pflag
+     * @throws Exception
+     */
+    public void updatePflag(String pid,Integer pflag)throws Exception;
 
+    /**
+     * 新增商品
+     * @param product
+     * @throws Exception
+     */
+    public void save(Product product)throws Exception;
 }

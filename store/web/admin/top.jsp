@@ -49,7 +49,7 @@ TH {
 tmpDate = new Date();
 date = tmpDate.getDate();
 month= tmpDate.getMonth() + 1 ;
-year= tmpDate.getYear();
+year= tmpDate.getFullYear();
 document.write(year);
 document.write("年");
 document.write(month);
@@ -90,6 +90,7 @@ else
 											用户名：
 											<font color="blue"><s:property value="#session.existAdminUser.username"/></font>
 										</td>
+
 										<td width="10" align="right"
 											background="${pageContext.request.contextPath}/images/mis_05b.jpg">
 											<img src="${pageContext.request.contextPath}/images/mis_05c.jpg" width="6" height="18">

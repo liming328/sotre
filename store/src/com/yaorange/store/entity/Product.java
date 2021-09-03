@@ -11,7 +11,7 @@ public class Product {
     private Double market_price;
     private Double  shop_price;
     private String  pimage;
-    private Date pdate;
+    private Date pdate=new Date();
     private int is_hot;//是否热门 1-热门 0-非热门
     private String pdesc;
     private int   pflag; //1-未下架 0-已下架

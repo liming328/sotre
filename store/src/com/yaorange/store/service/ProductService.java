@@ -23,6 +23,14 @@ public interface ProductService {
     public Page findPageByCid(String cid, String currPage)throws Exception;
 
     /**
+     *  查询商品的分页数据
+     * @param currPage
+     * @return
+     * @throws Exception
+     */
+    public Page findPage(String currPage )throws Exception;
+
+    /**
      * 查询某类别商品上架总数
      * @param cid
      * @param pflag
@@ -44,4 +52,19 @@ public interface ProductService {
      * @return
      */
     public Category findByCid(String cid)throws Exception;
+
+    /**
+     * 修改商品在售状态
+     * @param pid
+     * @param pfalg
+     * @throws Exception
+     */
+    public void updatePfalg(String pid,Integer pfalg)throws Exception;
+
+    /**
+     * 新增商品
+     * @param product
+     * @throws Exception
+     */
+    public void save(Product product)throws Exception;
 }

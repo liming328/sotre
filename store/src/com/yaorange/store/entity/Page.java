@@ -51,7 +51,15 @@ public class Page {
 	public void setTotalCount(Integer totalCount) {
 		this.totalCount = totalCount;
 	}
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Page{" +
+				"list=" + list +
+				", currPage=" + currPage +
+				", totalPage=" + totalPage +
+				", pageSize=" + pageSize +
+				", totalCount=" + totalCount +
+				'}';
+	}
 }

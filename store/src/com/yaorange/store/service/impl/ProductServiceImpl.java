@@ -36,8 +36,30 @@ public class ProductServiceImpl implements ProductService {
         Integer beginRowIndex = (page.getCurrPage() - 1) * page.getPageSize();
         List<Product> productList = productDao.findPageByCid(cid,beginRowIndex,page.getPageSize());
         page.setList(productList);
+        MybatisUtil.closeSqlSession(sqlSession);
         return page;
     }
+
+    @Override
+    public Page findPage(String currPage) throws Exception {
+        SqlSession sqlSession = MybatisUtil.getSqlSession();
+        ProductDao productDao = sqlSession.getMapper(ProductDao.class);
+        if (null == currPage) {
+            currPage = "1";
+        }
+        Page page = new Page();
+        page.setCurrPage(Integer.valueOf(currPage));
+        Integer totalCount = getTotalCount(null ,null);//不区分是否上架
+        page.setTotalCount(totalCount);
+        Integer totalPage = page.getTotalPage();
+        page.setTotalPage(totalPage);
+        Integer beginRowIndex = (page.getCurrPage() - 1) * page.getPageSize();
+        List<Product> productList = productDao.findPage(beginRowIndex,page.getPageSize());
+        page.setList(productList);
+        MybatisUtil.closeSqlSession(sqlSession);
+        return page;
+    }
+
 
     @Override
     public int getTotalCount(String cid, Integer pflag) throws Exception {
@@ -64,5 +86,39 @@ public class ProductServiceImpl implements ProductService {
         Category category = productDao.findByCid(cid);
         MybatisUtil.closeSqlSession(sqlSession);
         return category;
+    }
+
+    @Override
+    public void updatePfalg(String pid, Integer pfalg) throws Exception {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = MybatisUtil.getSqlSession();
+            ProductDao productDao = sqlSession.getMapper(ProductDao.class);
+            productDao.updatePflag(pid, pfalg);
+            sqlSession.commit();
+        } catch (Exception e) {
+            if (null != sqlSession) {
+                sqlSession.rollback();
+            }
+        }finally {
+            MybatisUtil.closeSqlSession(sqlSession);
+        }
+    }
+
+    @Override
+    public void save(Product product) throws Exception {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = MybatisUtil.getSqlSession();
+            ProductDao productDao = sqlSession.getMapper(ProductDao.class);
+            productDao.save(product);
+            sqlSession.commit();
+        } catch (Exception e) {
+            if (null != sqlSession) {
+                sqlSession.rollback();
+            }
+        }finally {
+            MybatisUtil.closeSqlSession(sqlSession);
+        }
     }
 }
