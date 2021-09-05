@@ -8,7 +8,7 @@
 	</HEAD>
 	
 	<body>
-		<!--  -->
+	<span class="error">${msg}</span><br>
 		<form id="userAction_save_do" name="Form1" action="${pageContext.request.contextPath}/AdminProductServlet?method=save" method="post" enctype="multipart/form-data">
 			&nbsp;
 			<table cellSpacing="1" cellPadding="5" width="100%" align="center" bgColor="#eeeeee" style="border: 1px solid #8ba7e3" border="0">
@@ -81,9 +81,9 @@
 
 							</script>
 							<!-- 配置文件 -->
-							<script type="text/javascript" src="/ue/ueditor.config.js"></script>
+							<script type="text/javascript" src="${pageContext.request.contextPath}/ue/ueditor.config.js"></script>
 							<!-- 编辑器源码文件 -->
-							<script type="text/javascript" src="/ue/ueditor.all.js"></script>
+							<script type="text/javascript" src="${pageContext.request.contextPath}/ue/ueditor.all.js"></script>
 							<!-- 实例化编辑器 -->
 							<script type="text/javascript">
                                 var ue = UE.getEditor('container');

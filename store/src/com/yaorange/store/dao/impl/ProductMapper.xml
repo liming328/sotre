@@ -36,11 +36,16 @@
       limit #{beginRowIndex},#{pageSize}
     </select>-->
 
- <select id="findPageByCid" parameterType="object" resultType="Product">
+    <select id="findPageByCid" parameterType="object" resultType="Product">
       select <include refid="allCols"/> from product
       where cid =#{param1}
       order by  pdate desc
-      limit #{param2},#{param3}
+    limit #{param2},#{param3}
+    </select>
+    <select id="findPage" parameterType="object" resultType="Product">
+     select <include refid="allCols"/> from product
+     order by  pdate desc
+     limit #{param1},#{param2}
     </select>
     <select id="getTotalCount" parameterType="object" resultType="Integer">
         select count(pid) from product
@@ -61,4 +66,22 @@
         select cid,cname from category
         where cid=#{cid}
     </select>
+    <update id="updatePflag" parameterType="object" >
+        update product set pflag=#{param2}
+        where pid=#{param1}
+    </update>
+    <insert id="save" parameterType="Product">
+      insert into product values (
+       #{pid},
+       #{pname},
+       #{market_price},
+       #{shop_price},
+       #{pimage},
+       #{pdate},
+       #{is_hot},
+       #{pdesc},
+       #{pflag},
+       #{cid}
+        )
+    </insert>
 </mapper>

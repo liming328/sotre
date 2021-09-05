@@ -7,6 +7,11 @@
 		<link href="${pageContext.request.contextPath}/css/Style1.css" rel="stylesheet" type="text/css" />
 		<script language="javascript" src="${pageContext.request.contextPath}/js/public.js"></script>
 		<script type="text/javascript">
+			function pushDown(url) {
+				if (confirm("确认修改销售状态吗？")) {
+					location.href = url;
+				}
+			}
 			function addProduct(){
 				window.location.href = "${pageContext.request.contextPath}/AdminProductServlet?method=saveUI";
 			}
@@ -14,6 +19,7 @@
 	</HEAD>
 	<body>
 		<br>
+		<span class="error">${msg}</span><br>
 		<form id="Form1" name="Form1" action="${pageContext.request.contextPath}/user/list.jsp" method="post">
 			<table cellSpacing="1" cellPadding="0" width="100%" align="center" bgColor="#f5fafe" border="0">
 				<TBODY>
@@ -50,14 +56,17 @@
 									<td align="center" width="17%">
 										商品价格
 									</td>
-									<td align="center" width="17%">
+									<td align="center" width="10%">
 										是否热门
+									</td>
+									<td align="center" width="10%">
+										在售状态
 									</td>
 									<td width="7%" align="center">
 										编辑
 									</td>
 									<td width="7%" align="center">
-										下架
+										上/下架
 									</td>
 								</tr>
 								<c:forEach var="p" items="${ pageBean.list }" varStatus="status">
@@ -65,11 +74,11 @@
 											onmouseout="this.style.backgroundColor = '#F5FAFE';">
 											<td style="CURSOR: hand; HEIGHT: 22px" align="center"
 												width="18%">
-												${ status.count }
+												${ status.count}
 											</td>
 											<td style="CURSOR: hand; HEIGHT: 22px" align="center"
 												width="17%">
-												<img width="40" height="45" src="${ pageContext.request.contextPath }/${p.pimage}">
+												<img width="40" height="45" src="${pageContext.request.contextPath}/${p.pimage}">
 											</td>
 											<td style="CURSOR: hand; HEIGHT: 22px" align="center"
 												width="17%">
@@ -80,12 +89,21 @@
 												${ p.shop_price }
 											</td>
 											<td style="CURSOR: hand; HEIGHT: 22px" align="center"
-												width="17%">
+												width="10%">
 												<c:if test="${ p.is_hot == 1 }">
 													是
 												</c:if>
 												<c:if test="${ p.is_hot == 0 }">
 													否
+												</c:if>
+											</td>
+											<td style="CURSOR: hand; HEIGHT: 22px" align="center"
+												width="10%">
+												<c:if test="${ p.pflag == 1 }">
+													已下架
+												</c:if>
+												<c:if test="${ p.pflag == 0 }">
+													在售
 												</c:if>
 											</td>
 											<td align="center" style="HEIGHT: 22px">
@@ -95,7 +113,7 @@
 											</td>
 									
 											<td align="center" style="HEIGHT: 22px">
-												<a href="${pageContext.request.contextPath}/AdminProductServlet?method=pushDown&pid=${p.pid}">
+												<a href="javascript:pushDown('${pageContext.request.contextPath}/AdminProductServlet?method=pushDown&pid=${p.pid}&currPage=${pageBean.currPage}&pflag=${p.pflag}');">
 													<img src="${pageContext.request.contextPath}/images/i_del.gif" width="16" height="16" border="0" style="CURSOR: hand">
 												</a>
 											</td>
@@ -109,8 +127,8 @@
 							第${ pageBean.currPage }/${ pageBean.totalPage }页 &nbsp; &nbsp; &nbsp;
 							总记录数:${ pageBean.totalCount }  &nbsp; 每页显示:${ pageBean.pageSize }
 							<c:if test="${ pageBean.currPage != 1 }">
-								<a href="${ pageContext.request.contextPath }/AdminProductServlet?method=${method}&currPage=1">首页</a>|
-								<a href="${ pageContext.request.contextPath }/AdminProductServlet?method=${method}&currPage=${ pageBean.currPage - 1}">上一页</a>|
+								<a href="${ pageContext.request.contextPath }/AdminProductServlet?method=findPage&currPage=1">首页</a>|
+								<a href="${ pageContext.request.contextPath }/AdminProductServlet?method=findPage&currPage=${ pageBean.currPage - 1}">上一页</a>|
 							</c:if>
 							&nbsp; &nbsp;
 							
@@ -119,14 +137,14 @@
 									[${ i }]
 								</c:if>
 								<c:if test="${ pageBean.currPage != i }">
-									<a href="${ pageContext.request.contextPath }/AdminProductServlet?method=${method}&currPage=${ i}">[${ i }]</a>
+									<a href="${ pageContext.request.contextPath }/AdminProductServlet?method=findPage&currPage=${ i}">[${ i }]</a>
 								</c:if>
 							</c:forEach>
 							
 							&nbsp; &nbsp;
 							<c:if test="${ pageBean.currPage != pageBean.totalPage }">
-								<a href="${ pageContext.request.contextPath }/AdminProductServlet?method=${method}&currPage=${ pageBean.currPage + 1}">下一页</a>|
-								<a href="${ pageContext.request.contextPath }/AdminProductServlet?method=${method}&currPage=${ pageBean.totalPage}">尾页</a>|
+								<a href="${ pageContext.request.contextPath }/AdminProductServlet?method=findPage&currPage=${ pageBean.currPage + 1}">下一页</a>|
+								<a href="${ pageContext.request.contextPath }/AdminProductServlet?method=findPage&currPage=${ pageBean.totalPage}">尾页</a>|
 							</c:if>	
 						</td>
 					</tr>
