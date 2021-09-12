@@ -1,7 +1,8 @@
 package com.yaorange.jk.web.system;
 
-import com.yaorange.jk.entity.dept;
-import com.yaorange.jk.service.deptService;
+import com.yaorange.jk.entity.Dept;
+import com.yaorange.jk.service.DeptService;
+
 import com.yaorange.jk.utils.Pagination;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,25 +14,28 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/system/dept")
-public class deptCtrl {
+public class DeptCtrl {
+    /**
+     *
+     */
     @Autowired
-    private deptService deptService;
+    private DeptService deptService;
     @GetMapping
     public Pagination page(Integer pageNo, Integer pageSize) {
         Pagination page = deptService.page(pageNo, pageSize);
         return page;
     }
     @GetMapping("/all")
-    public List<dept> findAll() {
+    public List<Dept> findAll() {
         return deptService.findAll();
     }
     @PostMapping
-    public String save(@RequestBody dept dept){
+    public String save(@RequestBody Dept dept){
         deptService.save(dept);
         return "1";
     }
     @PutMapping
-    public String update(@RequestBody dept dept){
+    public String update(@RequestBody Dept dept){
         deptService.update(dept);
         return "1";
     }

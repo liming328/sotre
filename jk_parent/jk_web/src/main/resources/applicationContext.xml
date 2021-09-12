@@ -20,7 +20,7 @@ http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springfr
     </bean>
 
     <!--配置sessionFactory-->
-    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+     <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <!--数据源-->
         <property name="dataSource" ref="dataSource"/>
         <!--hibernate属性-->
@@ -28,7 +28,7 @@ http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springfr
             <props>
                 <prop key="hibernate.show_sql">true</prop>
                 <prop key="hibernate.format_sql">true</prop>
-                <prop key="hibernate.hbm2ddl.auto">update</prop>
+          <!--  <prop key="hibernate.hbm2ddl.auto">update</prop>-->
                 <prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
                 <!-- hibernate 和 spring 集成后，没有把当前session存入线程  -->
                 <!--<prop key="hibernate.current_session_context_class">thread</prop>-->
