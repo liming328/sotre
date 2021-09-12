@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.yaorange.jk.entity">
+
+    <class name="User" table="USER_P">
+
+        <id name="id" column="USER_ID">
+            <generator class="uuid"/>
+        </id>
+       <!--普通属性-->
+        <property name="userName" column="USER_NAME"/>
+        <property name="state" column="STATE"/>
+        <property name="password" column="PASSWORD"/>
+        <property name="createBy" column="CREATE_BY"/>
+        <property name="createDept" column="CREATE_DEPT"/>
+        <property name="createTime" column="CREATE_TIME"/>
+        <property name="updateBy" column="UPDATE_BY"/>
+        <property name="updateTime" column="UPDATE_TIME"/>
+        <!--多对一配置-->
+        <many-to-one name="dept" class="com.yaorange.jk.entity.Dept" column="MODULE_ID"/>
+        <!--一对一配置-->
+        <one-to-one name="userInfo" class="com.yaorange.jk.entity.UserInfo" cascade="all"/>
+        <!--
+        cascade:
+            save-update:在保存和修改一方的同时，保存和修改多方
+            delete:在删除一方的同时，删除多方
+            all:save-update + delete
+            delete-orphan:孤儿删除
+            all-delete-orphan:save-update + delete +delete-orphan
+        -->
+
+        <!--<set name="employeeSet" cascade="all" inverse="false" lazy="false">-->
+        <!--<set name="employeeSet" cascade="all" inverse="false">-->
+
+        <!--用户和角色多对多-->
+        <set name="roleSet" table="ROLE_USER_P" inverse="false">
+            <key column="USER_ID"/>
+            <many-to-many class="com.yaorange.jk.entity.Role" column="ROLE_ID"/>
+        </set>
+
+    </class>
+
+</hibernate-mapping>
