@@ -2,7 +2,7 @@ package com.yaorange.jk.entity;
 
 import java.sql.Timestamp;
 import java.util.HashSet;
-import java.util.Objects;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -18,6 +18,15 @@ public class Role  extends BaseEntity{
     private Long orderNo;
     //一个角色可以有多个模块 (多对多)
     private Set<Module> moduleSet = new HashSet<>(0);
+   //用于展示,数据库中无
+    private String[] moduleIds;
+
+    public String[] getModuleIds() {
+        return moduleIds;
+    }
+    public void setModuleIds(String[] moduleIds) {
+        this.moduleIds = moduleIds;
+    }
 
     public String getId() {
         return id;

@@ -13,27 +13,27 @@ import java.util.List;
 public class ModuleServiceImpl implements ModuleService {
     @Autowired
     private BaseDao<Module, String> moduleDao;
-
+    @Override
     public Pagination page(Integer pageNo, Integer pageSize) {
         return moduleDao.pageByHql("from Module",pageNo,pageSize);
     }
-
+    @Override
     public List<Module> findAll() {
         return moduleDao.getListByHQL("from Module");
     }
-
+    @Override
     public void save(Module module) {
          moduleDao.save(module);
     }
-
+    @Override
     public void deleteByIds(String[] ids) {
         for (String id : ids) {
             moduleDao.deleteById(Module.class,id);
         }
     }
-
+    @Override
     public void update(Module module) {
-              moduleDao.update(module);
+          moduleDao.update(module);
     }
 
     @Override
