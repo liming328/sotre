@@ -35,7 +35,7 @@
         <!--<set name="employeeSet" cascade="all" inverse="false">-->
 
         <!--用户和角色多对多-->
-        <set name="roleSet" table="ROLE_USER_P" inverse="false">
+        <set name="roleSet" table="ROLE_USER_P" inverse="false" >
             <key column="USER_ID"/>
             <many-to-many class="com.yaorange.jk.entity.Role" column="ROLE_ID"/>
         </set>

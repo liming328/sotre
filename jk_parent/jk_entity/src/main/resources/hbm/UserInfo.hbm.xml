@@ -4,10 +4,12 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.yaorange.jk.entity">
 
-    <class name="UserInfo" table="USER_INFO_P">
+    <class name="UserInfo" table="USER_INFO_P" dynamic-insert="true" dynamic-update="true">
 
         <id name="id" column="USER_INFO_ID">
-            <generator class="uuid"/>
+            <generator class="foreign">
+              <param name="property">user</param>
+            </generator>
         </id>
        <!--普通属性-->
         <property name="name" column="NAME"/>

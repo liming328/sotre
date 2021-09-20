@@ -1,15 +1,13 @@
 package com.yaorange.jk.utils;
 
-
-import com.fasterxml.jackson.annotation.JsonView;
-
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * 列表分页。包含list属性。
  */
 @SuppressWarnings("serial")
-public class Pagination extends SimplePage implements java.io.Serializable {
+public class Pagination extends SimplePage implements Serializable {
 
     public Pagination() {
     }

@@ -27,7 +27,6 @@ public class UserInfo extends BaseEntity{
     private Long orderNo;
     private String email;
 
-
     //直属领导(多对一)
     private User manager;
 
@@ -144,5 +143,25 @@ public class UserInfo extends BaseEntity{
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", joinDate=" + joinDate +
+                ", salary=" + salary +
+                ", birthday=" + birthday +
+                ", gender='" + gender + '\'' +
+                ", station='" + station + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", degree=" + degree +
+                ", remark='" + remark + '\'' +
+                ", orderNo=" + orderNo +
+                ", email='" + email + '\'' +
+                ", manager=" + manager +
+                ", user=" + user +
+                '}';
     }
 }

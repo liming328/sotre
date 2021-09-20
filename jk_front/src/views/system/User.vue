@@ -46,7 +46,7 @@
                 <Col span="2" style="text-align: center"/>
                 <Col span="11">
                     <FormItem label="直属领导" prop="userInfo.manager.id">
-                        <Select v-model="updateForm.userInfo.manager.id">
+                        <Select v-model="updateForm.managerId">
                             <Option v-for="item in userList" :value="item.id" :disabled="item.id==updateForm.id"
                                     :key="item.id">{{ item.userName }}
                             </Option>
@@ -160,6 +160,7 @@
     <Modal
             v-model="addModal"
             title="添加用户"
+            :mask-closable="false"
             width="60%"
             @on-ok="add"
             @on-cancel="cancel"
@@ -177,7 +178,7 @@
                 <Col span="2" style="text-align: center"/>
                 <Col span="11">
                     <FormItem label="直属领导" prop="userInfo.manager.id">
-                        <Select v-model="addForm.userInfo.manager.id" filterable>
+                        <Select v-model="addForm.managerId" filterable>
                             <Option v-for="item in userList" :value="item.id" :key="item.id">{{ item.userName }}
                             </Option>
                         </Select>
@@ -327,7 +328,7 @@
                 loading: true,
                 count: 0,
                 gourpId: null,
-                pageSize: 20,
+                pageSize: 10,
                 pageNo: 1,
                 totalPage: 0,
                 totalCount: 0,
@@ -374,7 +375,7 @@
                         id: ""
                     },
                     "userName": "",
-                    "state": "",
+                    "state": "1",
                     "userInfo": {
                         "name": "",
                         "manager": {
@@ -383,7 +384,7 @@
                         "joinDate": "",
                         "salary": "",
                         "degree": "",
-                        "gender": "",
+                        "gender": "1",
                         "station": "",
                         "telephone": "",
                         "email": "",
@@ -393,6 +394,7 @@
                     }
                 },
                 updateForm: {
+                    id: "",
                     "dept": {
                         id: ""
                     },
@@ -455,9 +457,7 @@
         methods: {
             change(e) {
                 if (e.length == 1) {
-
                     var editUser =e[0];
-
 
 // 手动赋值的原因：userInfo中的manager不会转换成json，单独传了一个managerId过来
                     if(editUser.managerId!=undefined)
@@ -468,10 +468,7 @@
                     {
                         this.updateForm.dept.id=editUser.dept.id;
                     }
-                    if(editUser.userInfo != undefined)
-                    {
-
-
+                    if(editUser.userInfo != undefined) {
                         this.updateForm.userName=editUser.userName;
                         this.updateForm.id=editUser.id;
                         this.updateForm.userInfo.name=editUser.userInfo.name;
@@ -490,6 +487,12 @@
 //日期转字符
                         this.updateForm.userInfo.joinDate=formatDate(editUser.userInfo.joinDate);
                         this.updateForm.userInfo.birthday=formatDate(editUser.userInfo.birthday);
+                    }
+                    //使有数据为空时，不会用上次选中的数据
+                    if (this.updateForm.id !=e[0].id){
+                        this.$refs['updateForm'].resetFields();
+                        this.$refs['roleForm'].resetFields();
+                        this.updateForm.roleSet = [];
                     }
                 }
                 this.setGroupId(e);
@@ -512,16 +515,19 @@
             add() {
                 this.$refs['addForm'].validate((valid) => {
                     if (valid) {
-                        const user = this.addForm;
                         fetch({
                             url: '/system/user',
                             method: 'post',
-                            data: user
+                            data: this.addForm
                         }).then((result) => {
-                            this.gopage(this.pageNo);
-                            this.$refs['addForm'].resetFields();
-                            this.$Message.success('Success!');
-                            this.addModal = false;
+                            if (result.data=="1"){
+                                this.gopage(this.pageNo);
+                                this.$refs['addForm'].resetFields();
+                                this.$Message.success('新建用户成功!');
+                                this.addModal = false;
+                            }else {
+                                this.$Message.err('新建用户失败!');
+                            }
                         });
                     }
                     else {
@@ -553,13 +559,17 @@
                             url: '/system/user',
                             method: 'put',
                             data: this.updateForm,
-                            params : {
-                                managerId:this.updateForm.userInfo.manager.id
-                            }
                         }).then((result) => {
-                            this.updateModal = false,
-                                this.$Message.success('Success!');
-                            this.gopage(this.pageNo);
+                            if (result.data=="1"){
+                                this.gopage(this.pageNo);
+                                this.$refs['updateForm'].resetFields();
+                                this.gourpId = [];
+                                this.count = 0;
+                                this.$Message.success('修改用户成功!');
+                                this.updateModal = false;
+                            }else {
+                                this.$Message.err('修改用户失败!');
+                            }
                         });
                     }
                     else {
@@ -576,16 +586,21 @@
 //删除用户
             remove() {
                 if (this.groupId != null && this.groupId != "") {
-                    fetch({
-                        url: '/system/user',
-                        method: 'delete',
-                        data: this.groupId
-                    }).then((result) => {
-                        if (result.data == '1') {
-                            this.$Message.success('Success!');
-                            this.gopage(this.pageNo);
-                        }
-                    });
+                    if (confirm("确定要删除吗？")){
+                        fetch({
+                            url: '/system/user',
+                            method: 'delete',
+                            data: this.groupId
+                        }).then((result) => {
+                            if (result.data == '1') {
+                                this.$Message.success('删除成功!');
+                                this.gopage(this.pageNo);
+                            }else {
+                                this.$Message.err('删除失败!');
+                            }
+                        });
+                    }
+
                 } else {
                     this.$Message.warning('请至少选择一项');
                 }
@@ -622,9 +637,9 @@
                     this.roleForm.roleIds = new Array();//clean 之前的数据
 
 //将用户中的userSet 转成 roleIds，用于确定哪些角色已经被选中
-                    for(let i = 0 ;i < editData.roleSet.length;i++)
+                    for(let i = 0 ;i < this.updateForm.roleSet.length;i++)
                     {
-                        this.roleForm.roleIds[i] = editData.roleSet[i].id;
+                        this.roleForm.roleIds[i] = this.updateForm.roleSet[i].id;
                     }
 //显示角色对话框
                     this.roleModal = true;
@@ -637,10 +652,19 @@
                 fetch({
                     url: '/system/user/role',
                     method: 'put',
-                    params:roleForm
+                    data:roleForm
                 }).then((result) => {
-                    this.$Message.success('Success!');
-                    this.gopage(this.pageNo);
+                    if (result.data=='1'){
+                        this.$Message.success('角色分配成功!');
+                        this.$refs['roleForm'].resetFields();
+                        this.roleForm.roleIds = [];
+                        this.groupId = [];
+                        this.count = 0;
+                        this.gopage(this.pageNo);
+                        r
+                    }else {
+                        this.$Message.err('角色分配失败!');
+                    }
                 });
             },
         },
@@ -649,7 +673,7 @@
 
 //加载所有部门
             fetch({
-                url: '/system/dept/getAll',
+                url: '/system/dept/all',
                 method: 'get',
 
             }).then((result) => {
@@ -658,14 +682,14 @@
 
 //加载所有员工（直属领导）
             fetch({
-                url: '/system/user/getAll',
+                url: '/system/user/all',
                 method: 'get'
             }).then((result) => {
                 this.userList=result.data;
             });
 //加载角色列表
             fetch({
-                url: '/system/role/getAll',
+                url: '/system/role/all',
                 method: 'get'
             }).then((result) => {
                 this.roleList = result.data;

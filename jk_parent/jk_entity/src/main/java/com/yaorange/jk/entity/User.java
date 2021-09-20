@@ -1,8 +1,6 @@
 package com.yaorange.jk.entity;
 
-import java.sql.Timestamp;
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -96,4 +94,5 @@ public class User extends BaseEntity {
     public void setRoleSet(Set<Role> roleSet) {
         this.roleSet = roleSet;
     }
+
 }
