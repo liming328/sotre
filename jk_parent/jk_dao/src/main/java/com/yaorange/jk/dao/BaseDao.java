@@ -1,5 +1,6 @@
 package com.yaorange.jk.dao;
 
+import com.yaorange.jk.entity.User;
 import com.yaorange.jk.utils.Pagination;
 import org.hibernate.criterion.DetachedCriteria;
 import org.springframework.jdbc.core.RowMapper;

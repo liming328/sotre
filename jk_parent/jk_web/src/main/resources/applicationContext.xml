@@ -9,6 +9,7 @@ http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springfr
     <context:component-scan base-package="com.yaorange.jk.service"/>
     <context:component-scan base-package="com.yaorange.jk.dao"/>
     <context:component-scan base-package="com.yaorange.jk.utils"/>
+    <context:component-scan base-package="com.yaorange.jk.config"/>
 
     <context:property-placeholder location="classpath:*.properties"/>
     <!--数据源-->
@@ -72,13 +73,14 @@ http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springfr
         <aop:pointcut id="txPointcut" expression="execution(* com.yaorange.jk.service.*Service.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>
     </aop:config>
-
+    <!--注入一个bccyptPassword加密器-->
+    <bean id="passwordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
     <bean id="threadPool" class="org.springframework.scheduling.concurrent.ThreadPoolExecutorFactoryBean">
         <property name="corePoolSize" value="10"/>
         <property name="maxPoolSize" value="100"/>
         <property name="queueCapacity" value="2000"/>
     </bean>
-
+    <import resource="applicationContext-mail.xml"/>
 
 
 </beans>

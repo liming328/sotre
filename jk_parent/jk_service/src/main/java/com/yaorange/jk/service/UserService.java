@@ -33,4 +33,11 @@ public interface UserService {
      * @param roleIds
      */
     void updateRole(String id, String[] roleIds);
+
+    /**
+     * 登录
+     * @param username
+     * @return
+     */
+    User findByUsername(String username);
 }

@@ -54,15 +54,20 @@
                 <Col span="2" style="text-align: center"/>
             </Row>
             <Row>
-                <FormItem label="模块">
+                <Input type="hidden" v-model="addForm.moduleIds"/>
+                <FormItem label="模块" prop="moduleIds">
                     <!--<ul id="addTree" class="ztree" style="background-color: #3dbd7d;width: 90%">
                         <li v-for="module in moduleList" :value="module.id">
                             {{module.name}}
                         </li>
                     </ul>-->
-                    <checkbox-group v-model="addForm.moduleIds">
+                   <!-- 复选框模式-->
+                  <!--  <checkbox-group v-model="addForm.moduleIds">
                         <checkbox  v-for ="(module,index) in moduleList" :label="module.id">{{index+1}}-{{module.name}}</checkbox>
-                    </checkbox-group>
+                    </checkbox-group>-->
+                   <!-- ztree树展示-->
+                    <ul id="addZTree" class="ztree" style="background-color: #ECF8E0;width: 90%">
+                    </ul>
                 </FormItem>
 
             </Row>
@@ -101,15 +106,17 @@
                 <Col span="2" style="text-align: center"/>
             </Row>
             <Row>
-             <FormItem label="模块">
+                <Input type="hidden" v-model="updateForm.moduleIds"/>
+             <FormItem label="模块"  prop="moduleIds">
                     <!--<ul id="addTree" class="ztree" style="background-color: #3dbd7d;width: 90%">
                         <li v-for="module in moduleList" :value="module.id">
                             {{module.name}}
                         </li>
                     </ul>-->
-            <checkbox-group v-model="updateForm.moduleIds">
+            <!--<checkbox-group v-model="updateForm.moduleIds">
                 <checkbox  v-for ="(module,index) in moduleList" :label="module.id">{{index+1}}-{{module.name}}</checkbox>
-            </checkbox-group>
+            </checkbox-group>-->
+                 <ul id="updateZTree" class="ztree"></ul>
             </FormItem>
              </Row>
         </Form>
@@ -119,6 +126,12 @@
 
 <script type="text/ecmascript-6">
     import fetch from '../../utils/fetch';
+    //以node_module开始计算。。
+    import "ztree/js/jquery-1.4.4.min.js";
+    import "ztree/js/jquery.ztree.core.min.js";
+    import "ztree/js/jquery.ztree.excheck.min.js";
+
+    import "ztree/css/zTreeStyle/zTreeStyle.css"
     export default {
         data() {
             return {
@@ -179,7 +192,20 @@
                     orderNo: [
                         {required: true, message: '排序号不能为空', trigger: 'blur'}
                     ]
-                }
+                },
+                addZTree: {},
+                setting: { check: {
+                    enable: true
+                    },
+                    data: {
+                      simpleData: {
+                        enable: true
+                      }
+                   }
+                },
+                zNodes: [],
+                updateNodes: [],
+                updateZTree: {}
             }
         },
         methods: {
@@ -202,18 +228,22 @@
             addRole() {
                 this.addModal = true;
             },
-            add(){
-               /* const addForm = this.addForm;*/
-                this.$refs['addForm'].validate((valid)=>{
-                    if(valid) {
+            add: function () {
+                /* const addForm = this.addForm;*/
+                let checkedNodes = this.addZTree.getCheckedNodes(true);//获得选中的ztree节点
+                for (let i = 0; i < checkedNodes.length; i++) {
+                    this.addForm.moduleIds.push(checkedNodes[i].id);
+                }
+                this.$refs['addForm'].validate((valid) => {
+                    if (valid) {
                         fetch({
                             url: '/system/role',
                             method: 'post',
                             data: this.addForm
                         }).then((resp) => {
-                            if (resp.data=="1"){
+                            if (resp.data == "1") {
                                 this.$refs['addForm'].resetFields();
-                                this.addModal=false;
+                                this.addModal = false;
                                 this.gopage(this.pageNo);
                                 //如果设置集合，不能清空
                                 this.addForm.moduleIds = [];
@@ -226,12 +256,12 @@
                         });
                     } else {
                         this.$Message.error("表单验证失败");
-                        setTimeout(()=>{
-                            this.loading=false;
-                            this.$nextTick(()=>{
-                                this.loading=true;
+                        setTimeout(() => {
+                            this.loading = false;
+                            this.$nextTick(() => {
+                                this.loading = true;
                             });
-                        },1000);
+                        }, 1000);
                     }
                 })
             },
@@ -242,18 +272,39 @@
                 }
                 else {
                     const editData = this.updateForm;
-                    this.updateForm.moduleIds = [];
-                    for (let i = 0; i <editData.moduleSet.length ; i++) {
-                       this.updateForm.moduleIds[i] =editData.moduleSet[i].id;
+                    this.updateModal = true;
+                    //尝试前端处理。。。
+                   /* this.updateForm.moduleIds = [];
+                    this.updateNodes = this.zNodes;
+                    for (let i = 0; i <this.updateNodes.length; i++) {
+                        for (let j = 0; j < this.updateForm.moduleSet.length; j++) {
+                            if (this.updateNodes[i].id===this.updateForm.moduleSet[j].id){
+                                this.updateForm.moduleIds.push(this.updateNodes[i].id);
+                                this.updateNodes[i].checked=true;
+                                continue;
+                            }
+                        }
                     }
+                    this.updateZTree = $.fn.zTree.init($('#updateZTree'),this.setting,this.updateNodes);*/
+                    const roleId = this.groupId[0];
+                   fetch({
+                       url: '/system/module/allZTreeNode/' + roleId,
+                       method: 'get'
+                   }).then((resp)=>{
+                       this.updateZTree = $.fn.zTree.init($('#updateZTree'),this.setting,resp.data);
+    })
 //radio组件lavle接受字符串，因此自己转换一下 int -> string
                     this.updateForm.orderNo= this.updateForm.orderNo+"";
-                    this.updateModal = true;
                 }
             },
             update() {
                 this.$refs['updateForm'].validate((valid) => {
-                    if (valid) {
+                        if (valid) {
+                            this.updateForm.moduleIds = [];
+                            const checkedNodes = this.updateZTree.getCheckedNodes(true); //取 得选中的结点
+                            for (let i = 0; i < checkedNodes.length; i++) {
+                                this.updateForm.moduleIds.push(checkedNodes[i].id);
+                            }
                         fetch({
                             url: '/system/role',
                             method: 'put',
@@ -261,7 +312,7 @@
                         }).then((result) => {
                             if (result.data=="1"){
                                 this.updateModal = false,
-                                 this.$refs['updateForm'].resetFields();
+                                this.$refs['updateForm'].resetFields();
                                 this.updateForm.moduleIds = [];
                                 this.updateForm.moduleSet = [];
                                 this.$Message.success('修改角色成功!');
@@ -324,11 +375,22 @@
         mounted: function () {
             this.gopage();
             //加载的所有模块没有级次关系
-            fetch({
+           /* fetch({
                 url:"/system/module/all",
                 method:"get"
             }).then((resp)=>{
                 this.moduleList = resp.data;
+            })*/
+            //加载的所有模块有级次关系展示
+            fetch({
+                url:"/system/module/allZTreeNode",
+                method:"get"
+            }).then((resp)=>{
+                this.zNodes = resp.data;
+                this.updateNodes=resp.data;
+                //1显示树标签的id,2树属性的集合，3树的数据集合
+                this.addZTree = $.fn.zTree.init($('#addZTree'),this.setting,this.zNodes);
+                this.updateZTree = $.fn.zTree.init($('#updateZTree'),this.setting,this.zNodes);
             })
         }
     }

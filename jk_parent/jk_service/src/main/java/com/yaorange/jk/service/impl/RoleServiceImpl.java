@@ -15,7 +15,7 @@ public class RoleServiceImpl implements RoleService {
     private BaseDao<Role,String> roleDao;
     @Override
     public Pagination page(Integer pageNo, Integer pageSize) {
-        return roleDao.pageByHql("from Role", pageNo, pageSize);
+        return roleDao.pageByHql("from Role order by createTime desc", pageNo, pageSize);
     }
 
     @Override

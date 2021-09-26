@@ -19,7 +19,7 @@
         <property name="updateBy" column="UPDATE_BY"/>
         <property name="updateTime" column="UPDATE_TIME"/>
         <!--多对一配置-->
-        <many-to-one name="dept" class="com.yaorange.jk.entity.Dept" column="MODULE_ID"/>
+        <many-to-one name="dept" class="com.yaorange.jk.entity.Dept" column="DEPT_ID"/>
         <!--一对一配置-->
         <one-to-one name="userInfo" class="com.yaorange.jk.entity.UserInfo" cascade="all"/>
         <!--
