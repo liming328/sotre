@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.yaorange.jk.entity">
+
+    <class name="Contract" table="CONTRACT_C" dynamic-insert="true" dynamic-update="true">
+       <!--主键-->
+        <id name="id" column="CONTRACT_ID">
+            <generator class="uuid"/>
+        </id>
+       <!--普通属性-->
+        <property name="offeror" column="OFFEROR"/>
+        <property name="contractNo" column="CONTRACT_NO"/>
+        <property name="signingDate" column="SIGNING_DATE"/>
+        <property name="inputBy" column="INPUT_BY"/>
+        <property name="checkBy" column="CHECK_BY"/>
+        <property name="inspector" column="INSPECTOR"/>
+        <property name="totalAmount" column="TOTAL_AMOUNT"/>
+        <property name="crequest" column="CREQUEST"/>
+        <property name="customName" column="CUSTOM_NAME"/>
+        <property name="shipTime" column="SHIP_TIME"/>
+        <property name="importNum" column="IMPORT_NUM"/>
+        <property name="deliveryPeriod" column="DELIVERY_PERIOD"/>
+        <property name="oldState" column="OLD_STATE"/>
+        <property name="outState" column="OUT_STATE"/>
+        <property name="tradeTerms" column="TRADE_TERMS"/>
+        <property name="printStyle" column="PRINT_STYLE"/>
+        <property name="remark" column="REMARK"/>
+        <property name="state" column="STATE"/>
+        <property name="createBy" column="CREATE_BY"/>
+        <property name="createDept" column="CREATE_DEPT"/>
+        <property name="createTime" column="CREATE_TIME"/>
+        <property name="updateBy" column="UPDATE_BY"/>
+        <property name="updateTime" column="UPDATE_TIME"/>
+
+        <!--一对多配置-->
+        <!--一个合同下多个货物-->
+        <set name="contractProductSet">
+            <key column="CONTRACT_ID"></key>
+            <one-to-many class="ContractProduct"/>
+        </set>
+        <!--
+        cascade:
+            save-update:在保存和修改一方的同时，保存和修改多方
+            delete:在删除一方的同时，删除多方
+            all:save-update + delete
+            delete-orphan:孤儿删除
+            all-delete-orphan:save-update + delete +delete-orphan
+        -->
+
+        <!--<set name="employeeSet" cascade="all" inverse="false" lazy="false">-->
+        <!--<set name="employeeSet" cascade="all" inverse="false">-->
+
+        <!--以下的批量检索batch-size不和fetch一起使用,有点自相矛盾-->
+        <!--<set name="employeeSet" cascade="all" lazy="true" batch-size="3">
+            <key column="dept_id"/>
+            <one-to-many class="Employee"/>
+        </set>-->
+    </class>
+
+</hibernate-mapping>

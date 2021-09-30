@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.yaorange.jk.entity">
+
+    <class name="ContractProduct" table="CONTRACT_PRODUCT_C">
+       <!--主键-->
+        <id name="id" column="CONTRACT_PRODUCT_ID">
+            <generator class="uuid"/>
+        </id>
+       <!--普通属性-->
+        <property name="factoryName" column="FACTORY_NAME"/>
+        <property name="productNo" column="PRODUCT_NO"/>
+        <property name="productImage" column="PRODUCT_IMAGE"/>
+        <property name="productDesc" column="PRODUCT_DESC"/>
+        <property name="loadingRate" column="LOADING_RATE"/>
+        <property name="boxNum" column="BOX_NUM"/>
+        <property name="packingUnit" column="PACKING_UNIT"/>
+        <property name="cnumber" column="CNUMBER"/>
+        <property name="outNumber" column="OUT_NUMBER"/>
+        <property name="finished" column="FINISHED"/>
+        <property name="productRequest" column="PRODUCT_REQUEST"/>
+        <property name="price" column="PRICE"/>
+        <property name="amount" column="AMOUNT"/>
+        <property name="orderNo" column="ORDER_NO"/>
+        <many-to-one name="contract" class="Contract" column="CONTRACT_ID"/>
+        <many-to-one name="factory" class="Factory" column="FACTORY_ID"/>
+        <!--一对多配置-->
+        <!--一个合同下货物多个附件-->
+        <set name="extCproductSet">
+            <key column="CONTRACT_PRODUCT_ID"></key>
+            <one-to-many class="ExtCproduct"/>
+        </set>
+    </class>
+
+</hibernate-mapping>
