@@ -18,6 +18,10 @@ public class ContractCtrl {
     public Pagination page(Integer pageNo, Integer pageSize) {
         return contractService.page(pageNo, pageSize);
     }
+    @GetMapping("/{state}")
+    public Pagination page(@PathVariable("state")Long state, Integer pageNo, Integer pageSize) {
+        return contractService.page(state,pageNo, pageSize);
+    }
     @PostMapping
     public String save(@RequestBody Contract contract) {
         contractService.save(contract);

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.yaorange.jk.entity">
+
+    <class name="ExportProduct" table="EXPORT_PRODUCT_C">
+       <!--主键-->
+        <id name="id" column="EXPORT_PRODUCT_ID">
+            <generator class="uuid"/>
+        </id>
+       <!--普通属性-->
+        <property name="productNo" column="PRODUCT_NO"/>
+        <property name="packingUnit" column="PACKING_UNIT"/>
+        <property name="cnumber" column="CNUMBER"/>
+        <property name="boxNum" column="BOX_NUM"/>
+        <property name="grossWeight" column="GROSS_WEIGHT"/>
+        <property name="netWeight" column="NET_WEIGHT"/>
+        <property name="sizeLength" column="SIZE_LENGTH"/>
+        <property name="sizeWidth" column="SIZE_WIDTH"/>
+        <property name="sizeHeight" column="SIZE_HEIGHT"/>
+        <property name="exPrice" column="EX_PRICE"/>
+        <property name="price" column="PRICE"/>
+        <property name="tax" column="TAX"/>
+        <property name="orderNo" column="ORDER_NO"/>
+        <many-to-one name="export" class="Export" column="EXPORT_ID"/>
+        <many-to-one name="factory" class="Factory" column="FACTORY_ID"/>
+        <set name="extEproductSet" cascade="save-update" inverse="false">
+            <key column="EXPORT_PRODUCT_ID"></key>
+            <one-to-many class="ExtEproduct"/>
+        </set>
+    </class>
+
+</hibernate-mapping>

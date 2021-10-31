@@ -7,772 +7,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf3a16e0-843b-44fb-a990-78354bfb6c30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../jk_front/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jk_front/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jk_front/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jk_front/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jk_front/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jk_front/.idea/jk_front.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jk_front/src/views/charts/ECharts_test.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jk_front/src/views/charts/FactorySale.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jk_front/src/views/charts/OnlineInfoChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jk_front/src/views/charts/ProductSale.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/Export.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/ExportProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/ExtEproduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_entity/src/main/resources/hbm/Export.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_entity/src/main/resources/hbm/ExportProduct.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_entity/src/main/resources/hbm/ExtEproduct.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ExportProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ExportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/ExportProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/ExportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_utils/src/main/java/com/yaorange/jk/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_utils/src/main/java/com/yaorange/jk/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/job/MailJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/ExportCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/ExportPorductCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/OutProductCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/stat/StatChartCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/resources/applicationContext-quartz.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/resources/applicationContext-quartz1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/OFFER.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/SALES.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/SAMPLE.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/tCONTRACT.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/tCONTRACTVO.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/tEXPORT.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/tFINANCE.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/tHOMEPARKINGLIST.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/tINVOICE.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/tOUTPRODUCT.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/tPARKINGLIST.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/tSHIPPINGORDER.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jk_web/src/main/webapp/make/xlsprint/txOutProduct.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jk_front/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jk_front/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/.idea/artifacts/store_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/.idea/libraries/asm_3_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/.idea/libraries/lib___2_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/.idea/libraries/servlet_api.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/config/ehcache.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/dao/CategoryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/dao/OrderDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/dao/OrderItemDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/dao/ProductDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/dao/impl/CategoryMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/dao/impl/OrderItemMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/dao/impl/OrderMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/dao/impl/ProductMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/dao/impl/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/entity/CartItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/entity/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/entity/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/entity/OrderItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/entity/Page.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/entity/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/service/CategoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/service/OrderItemService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/service/OrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/service/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/service/impl/CategoryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/service/impl/OrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/service/impl/ProductServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/test/OrderServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/test/ProductServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/utils/CacheUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/utils/CookieUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/utils/MailUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/utils/MyDateConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/utils/MybatisUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/utils/PaymentUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/utils/UuidUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/web/filter/AutoLoginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/web/filter/CheckLoginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/web/listener/MyServletContextListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/web/servlet/BaseServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/web/servlet/admin/AdminProductServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/web/servlet/front/CartServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/web/servlet/front/CategoryServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/web/servlet/front/CheckImgServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/web/servlet/front/OrderServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/web/servlet/front/ProductServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/com/yaorange/store/web/servlet/front/UserServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/ehcache.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/src/mybatis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/store.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/asm-3.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/cglib-2.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/commons-beanutils-1.8.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/commons-codec-1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/commons-io-2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/commons-logging-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/ehcache-2.10.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/fastjson-1.2.49.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/javassist-3.17.1-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/json.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/jstl.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/log4j-1.2.16.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/mail.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/mybatis-3.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/mysql-connector-java-5.1.26.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/servlet-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/slf4j-api-1.7.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/slf4j-api-1.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/slf4j-jdk14-1.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/slf4j-log4j12-1.7.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/slf4j-log4j12-1.7.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/standard.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/lib/ueditor-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/bottom.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/category/add.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/category/edit.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/category/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/left.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/order/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/order/orderItem.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/product/add.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/product/edit.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/product/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/product/pushDown_list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/top.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/user/edit.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/user/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/admin/welcome.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/abc.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/bc.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/bcc.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/beijingnongshang.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/bh.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/bj.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/ccb.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/cib.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/cmb.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/cmbc.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/dy.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/gf.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/guangda.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/hx.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/icbc.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/nanjing.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/ningbo.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/pingan.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/post.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/sfz.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/sh.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/shpd.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/zheshang.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/bank_img/zx.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/cart.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/css/Style1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/css/dtree.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/css/left.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/059b5245-e3c8-43bf-80fe-700f0e4e68b8-thumbnail.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/4a51167a-89d5-4710-aca2-7c76edc355b8-thumbnail.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/51afeef5-f6cb-4936-abea-315cfca0edc0-thumbnail.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/54890cf9-91b0-40bc-9f68-51462e9c43a8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/750a9ce8-8c19-444d-b8cc-f3e7e786ec5d-thumbnail.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/93b9e55f-cbae-4c3c-b2f7-2636c7369db7-thumbnail.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/My97DatePicker.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/adidas.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/base64.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/beijirong.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/bigPic13867cc1-935a-4a3a-98f9-edf87ddb1c09.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/bigPic372e7faa-3ad0-444d-a89b-a8e9f0d6e929.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/bigPic4ed6edbf-fb3e-49a7-be5e-361b2ce02961.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/bigPic5ab54f67-a479-48fe-a41d-7d34b57036a3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/bigPica5720219-ba48-460a-a084-24d5b314bd03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/bigPica7e5d3dd-5984-4d0f-9851-35cc0987d9b9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/bigPicaa443d05-27b4-4964-958e-c81536f01d04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/bigPicc1e3a29e-17f5-4d9f-a186-b2c5a0b39b88.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/bigPicd0459632-fe4e-4a5d-8373-1a67c9f43ec2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/bigPice7c2e240-4147-4c11-b369-db3765ec3df9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/bigPicee0785e3-68e2-4e23-93ef-68904bc2a3c6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/blank.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/captcha (2).jhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/captcha.jhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/cart.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/cart.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/common.css.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/common.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/dadonggua.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/datepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/eifini.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/f37ba36a-181b-4161-a88f-f74c9adb485d-thumbnail.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/f5e39c37-94b2-462e-8e58-8bde3c5f1b8c-thumbnail.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/footer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/g.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/h.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/hengyuanxiang.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/i.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/index_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/index_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/index_right.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/index_top.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/j.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/jackjones.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/jsbn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/k.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/l.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/lining.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/login.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/logo.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/maoren.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/nike.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/o.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/p.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/product.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/product.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/q.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/r___________renleipic_01/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/r___________renleipic_01/bigPic139f030b-d68b-41dd-be6d-b94cc568d3c5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/r___________renleipic_01/bigPic19533252-0faa-4e64-8077-6e1908f47739.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/r___________renleipic_01/bigPic1ea8f1c9-8b8e-4262-8ca9-690912434692.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/r___________renleipic_01/bigPic5f3622b8-028a-4e62-a77f-f41a16d715ed.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/r___________renleipic_01/footer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/r___________renleipic_01/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/r___________renleipic_01/logo.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/r___________renleipic_01/logo1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/r___________renleipic_01/product.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/registImg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/regist_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/register.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/semir.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/sentubila.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/septwolves.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/slider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/sundance.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/vimly.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/image/yishion.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/IconTexto_WebDev_009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/article.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/cart.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/cart1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/common.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/dialog_overlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/error.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/finalbutton.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/gif53_029.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/i_del.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/i_edit.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/index.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/info.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/loading_bar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/loading_icon.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/login.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/loginbg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/member.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/message.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/mis_01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/mis_05a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/mis_05b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/mis_05c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/order.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/password.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/product.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/regist_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/register.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/review.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/shim.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/title2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/top_01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/top_100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/base.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/cd.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/empty.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/folder.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/folderopen.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/globe.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/imgfolder.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/join.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/joinbottom.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/line.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/minus.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/minusbottom.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/musicfolder.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/nolines_minus.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/nolines_plus.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/page.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/plus.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/plusbottom.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/question.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/images/tree/trash.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/bartlesvillecf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/emancipation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/footer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/logo.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/logo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/okwu-athletics.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/okwu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/img/title2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/include/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/info.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/js/dtree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/js/jquery-1.11.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/order_info.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/order_list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/product_info.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/product_list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/556d64fcNf28f90d0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0010.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0013.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0017.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0018.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0019.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0020.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0021.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0022.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0023.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0025.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0026.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0027.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0028.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0029.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0030.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0032.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0033.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0034.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0035.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0036.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0037.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0038.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0039.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0040.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0041.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0042.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0043.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0044.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0045.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0046.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0047.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0048.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0049.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/c_0050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs10001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs10002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs10003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs10004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs10005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs10006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs10007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs10008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs10009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs10010.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs20001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs20002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs20003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs20004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs20005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs20006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs20007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs20008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs20009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs20010.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs30001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs30002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs30003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs30004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs30005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs30006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs30007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs30008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs30009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs30010.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs40001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs40002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs40003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs40004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs40005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs40006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs40007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs40008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs40009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs40010.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs40011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs50001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs50002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs50003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs50004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs50005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs50006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs50007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs50008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs50009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs50010.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs60001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs60002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs60003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs60004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs60005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs60006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs60007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs60008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs60009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs60010.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs70001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs70002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs70003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs70004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs70005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs70006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs70007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs70008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs70009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/cs70010.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/duanxue1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/duanxue2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/duanxue3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/duanxue4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/1/nvxie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/155210007679548_y.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/562d008aN963ce5f2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/5632bdf8N789e6659.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/5632c2eeNbc918af0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/90560009093007_y.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/c_0001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/c_0002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/c_0003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/c_0004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/c_0005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/c_0006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/c_0007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/dn1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/dn2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/f001a62f-a49d-4a4d-b56f-2b6908a0002c_g.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/hao/ad.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/hao/big01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/hao/middle01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/hao/small01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/hao/small02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/hao/small03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/hao/small04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/hao/small05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/hao/small06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/hao/small07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/hao/small08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/hao/small09.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/news_left.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/products/news_right.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/anchor/anchor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/attachment.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/attachment.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/attachment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_jpg.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/images/alignicon.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/images/alignicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/images/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/images/file-icons.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/images/file-icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/images/icons.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/images/icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/images/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/images/progress.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/images/success.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/attachment/images/success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/background/background.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/background/background.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/background/background.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/background/images/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/background/images/success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/charts/chart.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/charts/charts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/charts/charts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/charts/charts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/charts/images/charts0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/charts/images/charts1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/charts/images/charts2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/charts/images/charts3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/charts/images/charts4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/charts/images/charts5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/emotion/emotion.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/emotion/emotion.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/emotion/emotion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/emotion/images/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/emotion/images/bface.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/emotion/images/cface.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/emotion/images/fface.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/emotion/images/jxface2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/emotion/images/tface.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/emotion/images/wface.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/emotion/images/yface.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/gmap/gmap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/help/help.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/help/help.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/help/help.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/image/image.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/image/image.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/image/image.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/image/images/alignicon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/image/images/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/image/images/icons.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/image/images/icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/image/images/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/image/images/progress.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/image/images/success.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/image/images/success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/insertframe/insertframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/internal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/link/link.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/map/map.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/map/show.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/music/music.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/music/music.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/music/music.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/preview/preview.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/addimg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/brush.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/delimg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/delimgH.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/empty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/emptyH.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/eraser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/redo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/redoH.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/scale.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/scaleH.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/size.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/undo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/images/undoH.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/scrawl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/scrawl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/scrawl/scrawl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/searchreplace/searchreplace.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/searchreplace/searchreplace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/snapscreen/snapscreen.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/spechars/spechars.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/spechars/spechars.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/table/dragicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/table/edittable.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/table/edittable.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/table/edittable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/table/edittd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/table/edittip.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/template/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/template/images/bg.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/template/images/pre0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/template/images/pre1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/template/images/pre2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/template/images/pre3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/template/images/pre4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/template/template.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/template/template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/template/template.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/center_focus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/file-icons.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/file-icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/icons.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/left_focus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/none_focus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/progress.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/right_focus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/success.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/images/success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/video.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/video.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/video/video.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/webapp/webapp.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/wordimage/imageUploader.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/wordimage/tangram.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/wordimage/wordimage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/dialogs/wordimage/wordimage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/jsp/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/jsp/controller.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/jsp/lib/commons-codec-1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/jsp/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/jsp/lib/commons-io-2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/jsp/lib/json.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/jsp/lib/ueditor-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/addimage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/alldeletebtnupskin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/copy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/deletedisable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/deleteenable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/listbackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/localimage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/music.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/rotateleftdisable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/rotateleftenable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/rotaterightdisable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/rotaterightenable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/en/images/upload.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/zh-cn/images/copy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/zh-cn/images/localimage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/zh-cn/images/music.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/zh-cn/images/upload.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/lang/zh-cn/zh-cn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/css/ueditor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/css/ueditor.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/dialogbase.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/anchor.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/arrow_down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/arrow_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/button-bg.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/cancelbutton.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/charts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/cursor_h.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/cursor_h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/cursor_v.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/cursor_v.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/dialog-title-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/filescan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/highlighted.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/icons-all.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/icons.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/loaderror.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/lock.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/neweditor-tab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/pagebreak.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/scale.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/sortable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/spacer.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/sparator_v.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/table-cell-align.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/tangram-colorpicker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/toolbar_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/unhighlighted.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/upload.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/videologo.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/word.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/default/images/wordpaste.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/themes/iframe.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/codemirror/codemirror.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/codemirror/codemirror.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/highcharts-more.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/highcharts-more.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/highcharts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/highcharts.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/annotations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/annotations.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/data.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/drilldown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/exporting.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/exporting.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/funnel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/funnel.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/heatmap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/map.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/themes/dark-blue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/themes/dark-green.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/themes/gray.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/themes/grid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/highcharts/themes/skies.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/jquery-1.10.2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/jquery-1.10.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/jquery-1.10.2.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/snapscreen/UEditorSnapscreen.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/video-js/font/vjs.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/video-js/font/vjs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/video-js/font/vjs.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/video-js/font/vjs.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/video-js/video-js.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/video-js/video-js.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/video-js/video-js.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/video-js/video.dev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/video-js/video.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/webuploader/Uploader.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/webuploader/webuploader.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/webuploader/webuploader.custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/webuploader/webuploader.html5only.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/webuploader/webuploader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/webuploader/webuploader.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/xss.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/third-party/zeroclipboard/ZeroClipboard.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/ueditor.all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/ueditor.all.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/ueditor.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/ueditor.parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../store/web/ue/ueditor.parse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/vo/BarChartVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/vo/BarChartVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/vo/LineChartVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/vo/LineChartVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ContractService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/ContractServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/ContractServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jk_web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jk_web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/ContractCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/ContractCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/system/UserCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/system/UserCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jk_web/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jk_web/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/jk_service/target/" />
@@ -787,18 +69,32 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/system/UserCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="298" column="21" selection-start-line="298" selection-start-column="21" selection-end-line="298" selection-end-column="21" />
+            <state relative-caret-position="243">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -807,6 +103,36 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/OutProductCtrl.java" />
+        <option value="$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/ExtEproduct.java" />
+        <option value="$PROJECT_DIR$/jk_entity/src/main/resources/hbm/ExtEproduct.hbm.xml" />
+        <option value="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/ContractCtrl.java" />
+        <option value="$PROJECT_DIR$/jk_entity/src/main/resources/hbm/Export.hbm.xml" />
+        <option value="$PROJECT_DIR$/jk_entity/src/main/resources/hbm/ExportProduct.hbm.xml" />
+        <option value="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ExportService.java" />
+        <option value="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/ExpotCtrl.java" />
+        <option value="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ExportProductService.java" />
+        <option value="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/ExportProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/ExportPorductCtrl.java" />
+        <option value="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/ExportServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/ExportCtrl.java" />
+        <option value="$PROJECT_DIR$/jk_web/pom.xml" />
+        <option value="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ContractService.java" />
+        <option value="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/UserService.java" />
+        <option value="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/job/MailJob.java" />
+        <option value="$PROJECT_DIR$/jk_web/src/main/resources/applicationContext-quartz.xml" />
+        <option value="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/ContractServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jk_utils/src/main/java/com/yaorange/jk/utils/DateUtils.java" />
+        <option value="$PROJECT_DIR$/jk_web/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/system/UserCtrl.java" />
+        <option value="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/config/security/SecurityWebApplicationInitializer.java" />
+        <option value="$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/vo/BarChartVO.java" />
+        <option value="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/stat/FactorySaleCtrl.java" />
+        <option value="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ContractProductService.java" />
+        <option value="$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/ContractProductServiceIpml.java" />
+        <option value="$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/vo/LineChartVO.java" />
+        <option value="$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/stat/StatChartCtrl.java" />
       </list>
     </option>
   </component>
@@ -855,6 +181,7 @@
     <option name="files">
       <list>
         <option value="$PROJECT_DIR$/../jk_front/.idea/jk_front.iml" />
+        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       </list>
     </option>
   </component>
@@ -881,7 +208,273 @@
             <path>
               <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
               <item name="jk_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yaorange" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="stat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jk_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jk_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jk_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -893,13 +486,29 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jk_front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="spring" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\myProject\jk_parent\jk_web\src\main\resources" />
+      <recent name="E:\myProject\jk_parent\jk_utils\src\main\java\com\yaorange\jk\utils" />
+      <recent name="E:\myProject\jk_parent\jk_entity\src\main\resources\hbm" />
+      <recent name="E:\myProject\jk_parent\jk_entity\src\main\java\com\yaorange\jk\entity" />
+      <recent name="E:\myProject\jk_parent\jk_web\src\main\webapp\make" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1075,17 +684,33 @@
       <option name="presentableId" value="Default" />
       <updated>1633575782304</updated>
       <workItem from="1633575785492" duration="1598000" />
-      <workItem from="1633579019783" duration="1993000" />
+      <workItem from="1633579019783" duration="62660000" />
+      <workItem from="1635167876552" duration="9045000" />
+      <workItem from="1635431115234" duration="1100000" />
+      <workItem from="1635507858226" duration="6593000" />
+      <workItem from="1635524260129" duration="833000" />
+      <workItem from="1635559552921" duration="11535000" />
+      <workItem from="1635643178626" duration="9090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3591000" />
+    <option name="totallyTimeSpent" value="102454000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1453" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15340501" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2516129" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1095,24 +720,24 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286908" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.87047356" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49892473" weight="0.32729805" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4982079" visible="true" weight="0.24233983" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.39693594" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3286908" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32729805" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50179213" side_tool="true" weight="0.61142063" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24946237" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.3297491" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.20358422" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -1120,36 +745,487 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25232974" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49892473" weight="0.32729805" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4982079" visible="true" weight="0.3913649" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.39693594" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3286908" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32729805" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50179213" side_tool="true" weight="0.61142063" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24946237" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.20358422" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&quot;2c90c5004ad63735014ad6d16f2e0004&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;4028817a33812ffd0133821a8eb5002b&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/druid/1.1.10/druid-1.1.10.jar!/com/alibaba/druid/util/JdbcUtils.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="556" selection-start-line="556" selection-end-line="556" />
+        <state relative-caret-position="69">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/oracle/ojdbc14/10.2.0.4.0/ojdbc14-10.2.0.4.0.jar!/oracle/jdbc/driver/T4CDriverExtension.class">
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/ExtCproduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="141">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/oracle/ojdbc14/10.2.0.4.0/ojdbc14-10.2.0.4.0.jar!/oracle/jdbc/driver/DatabaseError.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE-sources.jar!/org/springframework/aop/support/AopUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="315" selection-start-line="315" selection-end-line="315" />
+        <state relative-caret-position="116">
+          <caret line="337" selection-start-line="337" selection-end-line="337" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/ExtEproduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_utils/src/main/java/com/yaorange/jk/utils/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_dao/src/main/java/com/yaorange/jk/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="160" column="31" selection-start-line="160" selection-start-column="31" selection-end-line="160" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ExtCproductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ExportService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="764">
+          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_utils/src/main/java/com/yaorange/jk/utils/Pagination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-361">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/ExportProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ExportProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/ExportProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/Export.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/ExportPorductCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/ExportCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/ExtCproductCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/resources/applicationContext-quartz1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.4.RELEASE/spring-context-5.0.4.RELEASE.jar!/org/springframework/context/config/spring-context.xsd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ContractService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="52" column="60" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2033">
+          <caret line="123" column="5" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="53" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/resources/mail.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/resources/hbm/Role.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/resources/hbm/Module.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/resources/applicationContext-quartz.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/ContractServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="64" column="111" selection-start-line="64" selection-start-column="111" selection-end-line="64" selection-end-column="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_utils/src/main/java/com/yaorange/jk/utils/DateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/Contract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/cargo/ContractCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="41" />
+          <folding>
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/ExportServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2717">
+          <caret line="164" column="51" selection-start-line="164" selection-start-column="51" selection-end-line="164" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5562#5563#0" expanded="true" />
+            <element signature="e#5616#5617#0" expanded="true" />
+            <element signature="e#6444#6445#0" expanded="true" />
+            <element signature="e#6471#6472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/config/security/SecurityWebApplicationInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/system/RoleCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/system/ModuleCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-916">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/FactoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/vo/BarChartVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/job/MailJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MailJob#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/ContractProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="e#2328#2329#0" expanded="true" />
+            <element signature="e#2358#2359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/Module.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
-          <caret line="298" column="21" selection-start-line="298" selection-start-column="21" selection-end-line="298" selection-end-column="21" />
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/vo/PieChartVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/ContractProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_service/src/main/java/com/yaorange/jk/service/impl/ContractProductServiceIpml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="111" column="48" lean-forward="true" selection-start-line="111" selection-start-column="48" selection-end-line="111" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/stat/StatChartCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_entity/src/main/java/com/yaorange/jk/entity/vo/LineChartVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jk_web/src/main/java/com/yaorange/jk/web/system/UserCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1203,11 +1279,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>jk_dao</last-edited>
+          <last-edited>jk_utils</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

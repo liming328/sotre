@@ -3,6 +3,7 @@ package com.yaorange.jk.service;
 import com.yaorange.jk.entity.Contract;
 import com.yaorange.jk.utils.Pagination;
 
+import java.util.Date;
 import java.util.List;
 
 public interface ContractService {
@@ -39,8 +40,15 @@ public interface ContractService {
 
     /**
      * （批量）更新合同的状态
-     * @param groupId
+     * @param groupIds
      * @param newState
      */
-    void updateState(String groupId, Long newState);
+    void updateState(String[] groupIds, Long newState);
+
+    /**
+     * 查询合同交期（DeliveryPeriod）今天到期的所有合同
+     * @param now
+     * @return
+     */
+    public List<Contract> findListByDeliveryPeriod(Date now);
 }

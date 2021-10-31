@@ -9,7 +9,8 @@ http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springfr
     <context:component-scan base-package="com.yaorange.jk.service"/>
     <context:component-scan base-package="com.yaorange.jk.dao"/>
     <context:component-scan base-package="com.yaorange.jk.utils"/>
-    <context:component-scan base-package="com.yaorange.jk.config"/>
+    <!--去oauth2-->
+  <!--  <context:component-scan base-package="com.yaorange.jk.config"/>-->
 
     <context:property-placeholder location="classpath:*.properties"/>
     <!--数据源-->
@@ -81,6 +82,6 @@ http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springfr
         <property name="queueCapacity" value="2000"/>
     </bean>
     <import resource="applicationContext-mail.xml"/>
-
+    <import resource="applicationContext-quartz.xml"/>
 
 </beans>

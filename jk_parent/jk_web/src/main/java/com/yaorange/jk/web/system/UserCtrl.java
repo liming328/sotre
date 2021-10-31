@@ -3,7 +3,7 @@ package com.yaorange.jk.web.system;
 import com.yaorange.jk.entity.User;
 import com.yaorange.jk.entity.vo.RoleIdsVO;
 import com.yaorange.jk.service.UserService;
-import com.yaorange.jk.utils.JavaMailUtil;
+
 import com.yaorange.jk.utils.Pagination;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -24,9 +24,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/system/user")
 public class UserCtrl {
-    @Autowired
+    /*@Autowired
     @Qualifier("consumerTokenServices")
-    private ConsumerTokenServices consumerTokenServices;
+    private ConsumerTokenServices consumerTokenServices;*/
     @Autowired
     private UserService userService;
     @GetMapping
@@ -63,12 +63,12 @@ public class UserCtrl {
     @DeleteMapping("/logout")
     public String logout(String access_token, HttpServletRequest req, HttpServletResponse res) {
         //清空token
-        consumerTokenServices.revokeToken(access_token);
+        //consumerTokenServices.revokeToken(access_token);
         //清空spring security认证信息
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        if(authentication!=null){
-            new SecurityContextLogoutHandler().logout(req,res,authentication);
-        }
+        //Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        //if(authentication!=null){
+         //   new SecurityContextLogoutHandler().logout(req,res,authentication);
+        //}
         return "1";
     } @GetMapping("/info")
 

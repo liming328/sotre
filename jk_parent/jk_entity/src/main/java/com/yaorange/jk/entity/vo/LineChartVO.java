@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class LineChartVO {
     private List<String> titles = new ArrayList<>();
-    private List<Integer> values = new ArrayList<>();
+    private List<Long> values = new ArrayList<>();
 
     public List<String> getTitles() {
         return titles;
@@ -21,11 +21,11 @@ public class LineChartVO {
         this.titles = titles;
     }
 
-    public List<Integer> getValues() {
+    public List<Long> getValues() {
         return values;
     }
 
-    public void setValues(List<Integer> values) {
+    public void setValues(List<Long> values) {
         this.values = values;
     }
 }
